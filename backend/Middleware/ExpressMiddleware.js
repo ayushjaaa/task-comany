@@ -1,14 +1,12 @@
 import { body } from "express-validator";
 export const ComapnyVeidation = [
   body("CompanyName")
-    .notEmpty()
-    .withMessage("CompanyName cant be empty")
-    .isString()
-    .withMessage("CompanyName should be the string")
-    .isLength({ min: 3, max: 5 })
-    .withMessage(
-      "the CompanyName shoule be more then 3 and less then 15 charater"
-    ),
+  .trim() 
+  .notEmpty()
+  .withMessage("CompanyName is required")
+  .bail()
+  .isLength({ min: 3, max: 15 })
+  .withMessage("CompanyName must be between 3 and 15 characters"),
   body("location")
     .notEmpty()
     .withMessage("location can be empty")
@@ -69,6 +67,5 @@ export const RewiesVelidation = [
     .withMessage("ratings cant be empty")
     .isNumeric()
     .withMessage("ratings should be a string")
-    .isLength({ min: 4, max: 200 })
-    .withMessage("ratings shouold be more then 3 and less then 12 charter"),
+   
 ];

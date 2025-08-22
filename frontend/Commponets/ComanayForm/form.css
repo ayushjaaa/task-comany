@@ -1,0 +1,129 @@
+
+.form-Wrapper {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+
+  .form-Wrapper .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+
+  .form-Wrapper label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+
+  .form-Wrapper input[type="text"],
+  .form-Wrapper input[type="date"],
+  .form-Wrapper textarea {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-Wrapper input:focus,
+  .form-Wrapper textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+  }
+  
+
+  .form-Wrapper .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .form-Wrapper input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #4a90e2; 
+  }
+  
+
+  .form-Wrapper .error {
+    font-size: 0.85rem;
+    color: #d9534f;
+  }
+  
+
+  .form-Wrapper > div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+
+  }
+  
+
+  .form-Wrapper button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+
+  .form-Wrapper button[type="submit"] {
+    background: #4a90e2;
+    color: #fff;
+  }
+  .form-Wrapper button[type="submit"]:hover:enabled {
+    background: #357ab8;
+    transform: translateY(-2px);
+  }
+  .form-Wrapper button[type="submit"]:disabled {
+    background: #a0c4f0;
+    cursor: not-allowed;
+  }
+  
+
+  .form-Wrapper button[type="button"],
+  .form-Wrapper button:not([type]) {
+    background: #f0f0f0;
+    color: #333;
+  }
+  .form-Wrapper button[type="button"]:hover,
+  .form-Wrapper button:not([type]):hover {
+    background: #ddd;
+    transform: translateY(-2px);
+  }
+  .error-text {
+    color: red;       
+    font-size: 14px;     
+    margin-top: 4px;     
+  }
+
+
+  @media (max-width: 600px) {
+    .form-Wrapper {
+      padding: 20px;
+    }
+    .form-Wrapper > div {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .form-Wrapper button {
+      width: 100%;
+    }
+  }
+  

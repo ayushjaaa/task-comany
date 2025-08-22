@@ -24,7 +24,7 @@
     height: 100vh;
 
   }
-  /* Navbar */
+
   .navbar {
     width: 100%; 
     display: flex;
@@ -98,7 +98,7 @@
     box-sizing: border-box;
   }
   
-  /* Filters */
+  
   .filters {
     display: flex;
     align-items: center;
@@ -112,8 +112,10 @@
     flex: 1;
     padding: 12px;
     border: 1px solid #ddd;
+    color: #000;
     border-radius: 8px;
     min-width: 200px;
+    background-color: transparent;
   }
   
   .find-btn,
@@ -141,14 +143,14 @@
     border: 1px solid #ddd;
   }
   
-  /* Result text */
+ 
   .result {
     margin: 15px 0;
     font-size: 14px;
     color: #666;
   }
   
-  /* Company Card */
+
   .company-card {
 
     display: flex;
@@ -201,14 +203,18 @@
     margin-left: 5px;
   }
   
-  /* Right section */
+
   .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: right;
     min-width: 150px;
+    gap: 30px;
   }
   
   .date {
-    font-size: 13px;
+    font-size: 18px;
     color: #555;
     margin-bottom: 8px;
   }

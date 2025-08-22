@@ -39,7 +39,7 @@ export const addComanyController = async (req, res) => {
       description,
     });
     console.log(newComapny);
-    res.status(200).json({ message:"rating added succefully" });
+    res.status(200).json({ message:"Comany added succefully" });
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: "interna server errro" });
