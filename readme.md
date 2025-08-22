@@ -14,22 +14,9 @@ This document explains the **validation rules** for each field in the **Company 
 
 ---
 
-## Example JSON Payload
 
-```json
-{
-  "CompanyName": "TechLabs",
-  "Location": "SanFrancisco",
-  "FoundedOn": "2015-12-01",
-  "City": "SF",
-  "Description": "A leading technology company.",
-  "Logo": "https://via.placeholder.com/150",
-  "AcceptTerms": true
-}
-
-
-
-# Review Form Validation Rules
+json
+## Review Form Validation Rules
 
 This document explains the **validation rules** for each field in the **Review Form**, along with **example values** that will pass validation.
 
@@ -47,7 +34,24 @@ This document explains the **validation rules** for each field in the **Review F
 
 ---
 
-## Example JSON Payload
+
+
+
+
+## 1.Example JSON Payload  Company Form Validation Rules
+```json
+{
+  "CompanyName": "TechLabs",
+  "Location": "SanFrancisco",
+  "FoundedOn": "2015-12-01",
+  "City": "SF",
+  "Description": "A leading technology company.",
+  "Logo": "https://via.placeholder.com/150",
+  "AcceptTerms": true
+}
+json```
+
+## 2.Example JSON Payload Review Form Validation Rules
 
 ```json
 {
